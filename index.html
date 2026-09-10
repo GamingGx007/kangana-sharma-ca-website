@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CA Kangana Sharma — Virtual CFO & GST Services</title>
+  <meta name="description" content="CA Kangana Sharma offers expert Virtual CFO, GST, ITR Filing and Cross-Border Accounting services to help growing businesses achieve strategic financial leadership." />
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    /* Homepage-specific overrides */
+    .hero { padding-top: 48px; }
+
+    /* Floating card entry animation */
+    @keyframes cardDrop {
+      from { opacity: 0; transform: translateY(-18px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    .scard-1 { animation: cardDrop 0.5s ease 0.2s both; }
+    .scard-2 { animation: cardDrop 0.5s ease 0.38s both; }
+    .scard-3 { animation: cardDrop 0.5s ease 0.54s both; }
+    .scard-4 { animation: cardDrop 0.5s ease 0.70s both; }
+
+    /* Testimonials */
+    .testimonials-section {
+      background: var(--navy);
+      padding: 80px 24px;
+    }
+    .testimonials-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    .testimonials-inner .section-tag {
+      background: rgba(255,255,255,0.12);
+      color: var(--gold-light);
+    }
+    .testimonials-inner .section-h2 {
+      color: var(--white);
+    }
+    .testimonials-inner .section-sub {
+      color: rgba(255,255,255,0.65);
+    }
+    .testimonials-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      margin-top: 0;
+    }
+    .tcard {
+      background: rgba(255,255,255,0.07);
+      border: 1px solid rgba(255,255,255,0.10);
+      border-radius: var(--radius-md);
+      padding: 28px;
+      transition: var(--transition);
+    }
+    .tcard:hover {
+      background: rgba(255,255,255,0.11);
+    }
+    .tcard-stars {
+      color: var(--gold-light);
+      font-size: 16px;
+      letter-spacing: 2px;
+      margin-bottom: 14px;
+    }
+    .tcard p {
+      font-size: 14.5px;
+      color: rgba(255,255,255,0.75);
+      line-height: 1.7;
+      margin-bottom: 20px;
+      font-style: italic;
+    }
+    .tcard-author {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .tcard-avatar {
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.15);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--white);
+      flex-shrink: 0;
+    }
+    .tcard-name {
+      font-size: 13.5px;
+      font-weight: 700;
+      color: var(--white);
+    }
+    .tcard-role {
+      font-size: 12px;
+      color: rgba(255,255,255,0.5);
+    }
+
+    @media (max-width: 900px) {
+      .testimonials-grid { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 600px) {
+      .testimonials-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <div class="navbar-wrapper">
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+      <!-- Brand -->
+      <a href="index.html" class="navbar-brand">
+        <div class="navbar-logo" aria-hidden="true">
+          <svg viewBox="0 0 36 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <text x="0" y="18" font-family="Inter, sans-serif" font-size="14" font-weight="800" fill="white" letter-spacing="-0.5">CA</text>
+          </svg>
+        </div>
+        <span class="navbar-wordmark">Kangana Sharma</span>
+      </a>
+
+      <!-- Links -->
+      <ul class="navbar-links" id="navbar-links" role="menubar">
+        <li role="none"><a href="index.html" class="active" role="menuitem">Home</a></li>
+        <li role="none"><a href="services.html" role="menuitem">Services</a></li>
+        <li role="none"><a href="about.html" role="menuitem">About</a></li>
+        <li role="none"><a href="blog.html" role="menuitem">Blog</a></li>
+        <li role="none"><a href="contact.html" role="menuitem">Contact</a></li>
+      </ul>
+
+      <!-- Actions -->
+      <div class="navbar-actions">
+        <a href="contact.html" class="btn-book" id="btn-book-nav">Book Now</a>
+        <button class="btn-account" aria-label="Account" id="btn-account">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+            <circle cx="12" cy="7" r="4"/>
+          </svg>
+        </button>
+        <button class="nav-hamburger" id="nav-hamburger" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </div>
+
+  <!-- ===== PAGE ===== -->
+  <div class="page-wrapper">
+
+    <!-- HERO -->
+    <section class="hero" aria-label="Hero">
+      <div class="hero-inner">
+
+        <!-- Left -->
+        <div class="hero-left">
+          <div class="hero-tag fade-up">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="12"/></svg>
+            Chartered Accountant
+          </div>
+
+          <h1 class="hero-h1 fade-up fade-up-d1">
+            Strategic Financial Leadership<br>for Growing Businesses
+          </h1>
+
+          <p class="hero-sub fade-up fade-up-d2">
+            Virtual CFO, GST and Tax services to help you expand your business.
+          </p>
+
+          <a
+            href="https://wa.me/919284705515?text=Hi%20CA%20Kangana%20Sharma%2C%20I%20would%20like%20to%20know%20more%20about%20your%20services."
+            class="btn-whatsapp fade-up fade-up-d3"
+            target="_blank"
+            rel="noopener noreferrer"
+            id="hero-whatsapp-btn"
+            aria-label="Chat on WhatsApp"
+          >
+            <!-- WhatsApp icon -->
+            <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/>
+            </svg>
+            WhatsApp
+          </a>
+        </div>
+
+        <!-- Right — staggered service cards -->
+        <div class="hero-right" aria-label="Services preview">
+          <div class="service-cards-stack">
+
+            <!-- Virtual CFO -->
+            <div class="scard scard-1" aria-label="Virtual CFO service">
+              <div class="scard-icon icon-tan">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="color:#b8945a">
+                  <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                  <circle cx="12" cy="7" r="4"/>
+                </svg>
+              </div>
+              <span class="scard-title">Virtual CFO</span>
+            </div>
+
+            <!-- Cross-Border Accounting -->
+            <div class="scard scard-2" aria-label="Cross-Border Accounting service">
+              <div class="scard-icon icon-sage">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="color:#5a9e6f">
+                  <circle cx="12" cy="12" r="10"/>
+                  <line x1="2" y1="12" x2="22" y2="12"/>
+                  <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+                </svg>
+              </div>
+              <span class="scard-title">Cross-Border<br>Accounting</span>
+            </div>
+
+            <!-- GST -->
+            <div class="scard scard-3" aria-label="GST service">
+              <div class="scard-icon icon-gst" style="flex-direction:column;gap:0;">
+                <span class="gst-badge">GST</span>
+              </div>
+              <span class="scard-title">GST</span>
+            </div>
+
+            <!-- ITR Filing -->
+            <div class="scard scard-4" aria-label="ITR Filing service">
+              <div class="scard-icon icon-blue">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="color:#3a7fa8">
+                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                  <polyline points="14 2 14 8 20 8"/>
+                  <line x1="16" y1="13" x2="8" y2="13"/>
+                  <line x1="16" y1="17" x2="8" y2="17"/>
+                  <polyline points="10 9 9 9 8 9"/>
+                </svg>
+              </div>
+              <span class="scard-title">ITR Filing</span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES PREVIEW SECTION -->
+    <section class="section" aria-label="Services overview">
+      <div class="section-tag fade-up">Our Services</div>
+      <h2 class="section-h2 fade-up fade-up-d1">Everything Your Business Needs</h2>
+      <p class="section-sub fade-up fade-up-d2">From day-to-day bookkeeping to strategic financial leadership — all under one roof.</p>
+
+      <div class="services-preview-grid">
+        <div class="service-card-full fade-up fade-up-d1">
+          <div class="icon-wrap icon-tan">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="color:#b8945a">
+              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/>
+            </svg>
+          </div>
+          <h3>Virtual CFO</h3>
+          <p>Strategic financial guidance, cash flow management, and board-level reporting — without the full-time CFO cost.</p>
+        </div>
+
+        <div class="service-card-full fade-up fade-up-d2">
+          <div class="icon-wrap icon-sage">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="color:#5a9e6f">
+              <circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/>
+              <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+            </svg>
+          </div>
+          <h3>Cross-Border Accounting</h3>
+          <p>Seamless accounting for businesses with international operations, multi-currency transactions, and foreign compliance.</p>
+        </div>
+
+        <div class="service-card-full fade-up fade-up-d3">
+          <div class="icon-wrap icon-gst">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="color:#c4900a">
+              <rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
+            </svg>
+          </div>
+          <h3>GST Services</h3>
+          <p>GST registration, monthly/quarterly return filing, reconciliation, and advisory to keep you fully compliant.</p>
+        </div>
+
+        <div class="service-card-full fade-up fade-up-d4">
+          <div class="icon-wrap icon-blue">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="color:#3a7fa8">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+              <polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/>
+            </svg>
+          </div>
+          <h3>ITR Filing</h3>
+          <p>Accurate, timely Income Tax Return filing for individuals, HUFs, and businesses — minimising tax liability legally.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY CHOOSE -->
+    <section class="section" style="padding-top:0;" aria-label="Why choose us">
+      <div class="section-tag fade-up">Why Choose Us</div>
+      <h2 class="section-h2 fade-up fade-up-d1">Built for Growing Businesses</h2>
+      <div class="why-grid">
+        <div class="why-card fade-up fade-up-d1">
+          <div class="why-num">[X]+</div>
+          <h3>Years of Experience</h3>
+          <p>Deep expertise across industries — from startups to established enterprises.</p>
+        </div>
+        <div class="why-card fade-up fade-up-d2">
+          <div class="why-num">[X]+</div>
+          <h3>Clients Served</h3>
+          <p>Trusted by businesses across India and internationally.</p>
+        </div>
+        <div class="why-card fade-up fade-up-d3">
+          <div class="why-num">100%</div>
+          <h3>Compliance Record</h3>
+          <p>Zero penalties for clients with consistent, on-time filing and reporting.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="testimonials-section" aria-label="Client testimonials">
+      <div class="testimonials-inner">
+        <div class="section-tag fade-up">Testimonials</div>
+        <h2 class="section-h2 fade-up fade-up-d1">What Clients Say</h2>
+        <p class="section-sub fade-up fade-up-d2" style="margin-bottom:40px;">[Testimonial section — client quotes will be added here.]</p>
+        <div class="testimonials-grid">
+          <div class="tcard fade-up fade-up-d1">
+            <div class="tcard-stars">★★★★★</div>
+            <p>"[Testimonial placeholder — a genuine client quote will appear here once provided.]"</p>
+            <div class="tcard-author">
+              <div class="tcard-avatar">A</div>
+              <div>
+                <div class="tcard-name">[Client Name]</div>
+                <div class="tcard-role">[Designation, Company]</div>
+              </div>
+            </div>
+          </div>
+          <div class="tcard fade-up fade-up-d2">
+            <div class="tcard-stars">★★★★★</div>
+            <p>"[Testimonial placeholder — a genuine client quote will appear here once provided.]"</p>
+            <div class="tcard-author">
+              <div class="tcard-avatar">B</div>
+              <div>
+                <div class="tcard-name">[Client Name]</div>
+                <div class="tcard-role">[Designation, Company]</div>
+              </div>
+            </div>
+          </div>
+          <div class="tcard fade-up fade-up-d3">
+            <div class="tcard-stars">★★★★★</div>
+            <p>"[Testimonial placeholder — a genuine client quote will appear here once provided.]"</p>
+            <div class="tcard-author">
+              <div class="tcard-avatar">C</div>
+              <div>
+                <div class="tcard-name">[Client Name]</div>
+                <div class="tcard-role">[Designation, Company]</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA BAND -->
+    <div class="cta-band fade-up" style="max-width:1052px; margin-left:auto; margin-right:auto; margin-top:80px;">
+      <div>
+        <h2>Ready to get your finances under control?</h2>
+        <p>Book a free 30-minute consultation — no commitment, no jargon.</p>
+      </div>
+      <a
+        href="https://wa.me/919284705515?text=Hi%20CA%20Kangana%20Sharma%2C%20I%27d%20like%20to%20book%20a%20free%20consultation."
+        class="btn-whatsapp"
+        target="_blank"
+        rel="noopener noreferrer"
+        id="cta-whatsapp-btn"
+        style="flex-shrink:0;"
+      >
+        <svg viewBox="0 0 24 24" fill="currentColor">
+          <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/>
+        </svg>
+        Chat on WhatsApp
+      </a>
+    </div>
+
+    <!-- FOOTER -->
+    <footer style="margin-top:80px;">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <div class="footer-logo-mark">
+            <div class="navbar-logo"><svg viewBox="0 0 36 24" fill="none"><text x="0" y="18" font-family="Inter,sans-serif" font-size="14" font-weight="800" fill="white" letter-spacing="-0.5">CA</text></svg></div>
+            <span style="color:white;font-weight:700;font-size:15px;">Kangana Sharma</span>
+          </div>
+          <p>Helping growing businesses achieve strategic financial clarity through expert Virtual CFO, GST, and tax services.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="services.html">Virtual CFO</a></li>
+            <li><a href="services.html">Cross-Border Accounting</a></li>
+            <li><a href="services.html">GST Services</a></li>
+            <li><a href="services.html">ITR Filing</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Connect</h4>
+          <ul>
+            <li><a href="https://wa.me/919284705515" target="_blank" rel="noopener">WhatsApp</a></li>
+            <li><a href="#">LinkedIn [placeholder]</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2025 CA Kangana Sharma. All rights reserved.</span>
+        <span>ICAI Member [Member No. Placeholder]</span>
+      </div>
+    </footer>
+
+  </div><!-- /page-wrapper -->
+
+  <script src="js/main.js"></script>
+</body>
+</html>

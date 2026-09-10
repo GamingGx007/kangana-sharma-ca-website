@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog — CA Kangana Sharma</title>
+  <meta name="description" content="Financial insights, GST updates, tax planning tips and business finance articles from CA Kangana Sharma." />
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    .blog-filter-bar {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-bottom: 40px;
+    }
+    .filter-btn {
+      display: inline-flex;
+      align-items: center;
+      padding: 7px 16px;
+      border-radius: var(--radius-full);
+      font-size: 13.5px;
+      font-weight: 600;
+      cursor: pointer;
+      border: none;
+      background: var(--white);
+      color: var(--text-body);
+      box-shadow: var(--shadow-sm);
+      transition: var(--transition);
+    }
+    .filter-btn:hover, .filter-btn.active-filter {
+      background: var(--navy);
+      color: var(--white);
+    }
+    .blog-newsletter {
+      background: var(--white);
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-card);
+      padding: 48px 40px;
+      text-align: center;
+      margin-top: 64px;
+    }
+    .blog-newsletter h2 {
+      font-size: 26px;
+      font-weight: 800;
+      color: var(--navy);
+      letter-spacing: -0.5px;
+      margin-bottom: 12px;
+    }
+    .blog-newsletter p {
+      font-size: 15px;
+      color: var(--text-body);
+      line-height: 1.65;
+      max-width: 420px;
+      margin: 0 auto 24px;
+    }
+    .blog-card-img-placeholder {
+      height: 180px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 12.5px;
+      color: var(--text-muted);
+      font-weight: 500;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <div class="navbar-wrapper">
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+      <a href="index.html" class="navbar-brand">
+        <div class="navbar-logo">
+          <svg viewBox="0 0 36 24" fill="none"><text x="0" y="18" font-family="Inter,sans-serif" font-size="14" font-weight="800" fill="white" letter-spacing="-0.5">CA</text></svg>
+        </div>
+        <span class="navbar-wordmark">Kangana Sharma</span>
+      </a>
+      <ul class="navbar-links" id="navbar-links" role="menubar">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="blog.html" class="active">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="navbar-actions">
+        <a href="contact.html" class="btn-book" id="btn-book-nav">Book Now</a>
+        <button class="btn-account" aria-label="Account">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/>
+          </svg>
+        </button>
+        <button class="nav-hamburger" id="nav-hamburger" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </div>
+
+  <div class="page-wrapper">
+
+    <!-- PAGE HERO -->
+    <div class="page-hero">
+      <div class="section-tag">Insights & Updates</div>
+      <h1>Financial Intelligence<br>for Business Leaders</h1>
+      <p>Practical articles on GST, taxation, cash flow, and business finance — written in plain English, not accountant-speak.</p>
+    </div>
+
+    <!-- BLOG CONTENT -->
+    <section class="section">
+
+      <!-- Filter Bar -->
+      <div class="blog-filter-bar fade-up">
+        <button class="filter-btn active-filter" id="filter-all">All Topics</button>
+        <button class="filter-btn" id="filter-gst">GST</button>
+        <button class="filter-btn" id="filter-tax">Income Tax</button>
+        <button class="filter-btn" id="filter-cfo">Virtual CFO</button>
+        <button class="filter-btn" id="filter-business">Business Finance</button>
+      </div>
+
+      <!-- Article Grid -->
+      <div class="blog-grid">
+
+        <!-- Article 1 -->
+        <article class="blog-card fade-up fade-up-d1">
+          <div class="blog-card-img-placeholder" style="background: linear-gradient(135deg, #f0e6d3, #e8d5b8);">
+            [Article cover image — placeholder]
+          </div>
+          <div class="blog-card-body">
+            <span class="blog-tag">GST</span>
+            <h3>[GST Article Title — Placeholder]</h3>
+            <p>[Article preview / excerpt — placeholder. Final content to be provided by client.]</p>
+            <div class="blog-meta">
+              <span>[Date Placeholder]</span>
+              <a href="#" class="read-more">
+                Read →
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Article 2 -->
+        <article class="blog-card fade-up fade-up-d2">
+          <div class="blog-card-img-placeholder" style="background: linear-gradient(135deg, #e8f2e5, #d0e8cc);">
+            [Article cover image — placeholder]
+          </div>
+          <div class="blog-card-body">
+            <span class="blog-tag" style="background:#e8f2e5; color:#5a9e6f;">Virtual CFO</span>
+            <h3>[Virtual CFO Article Title — Placeholder]</h3>
+            <p>[Article preview / excerpt — placeholder. Final content to be provided by client.]</p>
+            <div class="blog-meta">
+              <span>[Date Placeholder]</span>
+              <a href="#" class="read-more">Read →</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Article 3 -->
+        <article class="blog-card fade-up fade-up-d3">
+          <div class="blog-card-img-placeholder" style="background: linear-gradient(135deg, #e0f0f8, #c8e4f4);">
+            [Article cover image — placeholder]
+          </div>
+          <div class="blog-card-body">
+            <span class="blog-tag" style="background:#e0f0f8; color:#3a7fa8;">Income Tax</span>
+            <h3>[ITR / Tax Article Title — Placeholder]</h3>
+            <p>[Article preview / excerpt — placeholder. Final content to be provided by client.]</p>
+            <div class="blog-meta">
+              <span>[Date Placeholder]</span>
+              <a href="#" class="read-more">Read →</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Article 4 -->
+        <article class="blog-card fade-up fade-up-d1">
+          <div class="blog-card-img-placeholder" style="background: linear-gradient(135deg, #fef3d8, #f5e4b0);">
+            [Article cover image — placeholder]
+          </div>
+          <div class="blog-card-body">
+            <span class="blog-tag" style="background:#fef3d8; color:#c4900a;">Business Finance</span>
+            <h3>[Business Finance Article Title — Placeholder]</h3>
+            <p>[Article preview / excerpt — placeholder. Final content to be provided by client.]</p>
+            <div class="blog-meta">
+              <span>[Date Placeholder]</span>
+              <a href="#" class="read-more">Read →</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Article 5 -->
+        <article class="blog-card fade-up fade-up-d2">
+          <div class="blog-card-img-placeholder" style="background: linear-gradient(135deg, #f0e6d3, #e8d5b8);">
+            [Article cover image — placeholder]
+          </div>
+          <div class="blog-card-body">
+            <span class="blog-tag">GST</span>
+            <h3>[GST Article Title 2 — Placeholder]</h3>
+            <p>[Article preview / excerpt — placeholder. Final content to be provided by client.]</p>
+            <div class="blog-meta">
+              <span>[Date Placeholder]</span>
+              <a href="#" class="read-more">Read →</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Article 6 -->
+        <article class="blog-card fade-up fade-up-d3">
+          <div class="blog-card-img-placeholder" style="background: linear-gradient(135deg, #e8f2e5, #d0e8cc);">
+            [Article cover image — placeholder]
+          </div>
+          <div class="blog-card-body">
+            <span class="blog-tag" style="background:#e8f2e5; color:#5a9e6f;">Cross-Border</span>
+            <h3>[Cross-Border Article Title — Placeholder]</h3>
+            <p>[Article preview / excerpt — placeholder. Final content to be provided by client.]</p>
+            <div class="blog-meta">
+              <span>[Date Placeholder]</span>
+              <a href="#" class="read-more">Read →</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- Newsletter CTA -->
+      <div class="blog-newsletter fade-up">
+        <div class="section-tag" style="margin: 0 auto 16px;">Stay Updated</div>
+        <h2>Get Finance Insights Delivered</h2>
+        <p>
+          Sign up to receive practical GST updates, tax deadline reminders, and business finance tips.
+          No spam — just useful content, when it matters.
+        </p>
+        <a
+          href="https://wa.me/919284705515?text=Hi%2C%20I%27d%20like%20to%20receive%20financial%20insights%20and%20updates%20from%20CA%20Kangana%20Sharma."
+          class="btn-whatsapp"
+          target="_blank"
+          rel="noopener noreferrer"
+          id="blog-whatsapp-subscribe"
+          style="margin: 0 auto;"
+        >
+          <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/>
+          </svg>
+          Subscribe via WhatsApp
+        </a>
+      </div>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer style="margin-top:24px;">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <div class="footer-logo-mark">
+            <div class="navbar-logo"><svg viewBox="0 0 36 24" fill="none"><text x="0" y="18" font-family="Inter,sans-serif" font-size="14" font-weight="800" fill="white" letter-spacing="-0.5">CA</text></svg></div>
+            <span style="color:white;font-weight:700;font-size:15px;">Kangana Sharma</span>
+          </div>
+          <p>Helping growing businesses achieve strategic financial clarity through expert Virtual CFO, GST, and tax services.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="services.html#virtual-cfo">Virtual CFO</a></li>
+            <li><a href="services.html#cross-border">Cross-Border Accounting</a></li>
+            <li><a href="services.html#gst">GST Services</a></li>
+            <li><a href="services.html#itr">ITR Filing</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Connect</h4>
+          <ul>
+            <li><a href="https://wa.me/919284705515" target="_blank" rel="noopener">WhatsApp</a></li>
+            <li><a href="#">LinkedIn [placeholder]</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2025 CA Kangana Sharma. All rights reserved.</span>
+        <span>ICAI Member [Member No. Placeholder]</span>
+      </div>
+    </footer>
+
+  </div>
+
+  <script src="js/main.js"></script>
+  <script>
+    // Filter button interaction (UI only — no actual filtering until articles are live)
+    document.querySelectorAll('.filter-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active-filter'));
+        btn.classList.add('active-filter');
+      });
+    });
+  </script>
+</body>
+</html>
