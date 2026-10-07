@@ -46,3 +46,59 @@ if (navbarWrapper) {
     }
   }, { passive: true });
 }
+
+// ===== RUNNING NUMBER COUNTERS =====
+const countObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      const el = entry.target;
+      const target = parseInt(el.getAttribute('data-count'), 10);
+      const suffix = el.getAttribute('data-suffix') || '';
+      const prefix = el.getAttribute('data-prefix') || '';
+      
+      if (isNaN(target)) return;
+      
+      let current = 0;
+      const duration = 1800; // ms
+      const stepTime = 25;
+      const increment = Math.ceil(target / (duration / stepTime));
+
+      const timer = setInterval(() => {
+        current += increment;
+        if (current >= target) {
+          current = target;
+          clearInterval(timer);
+        }
+        el.textContent = `${prefix}${current}${suffix}`;
+      }, stepTime);
+
+      countObserver.unobserve(el);
+    }
+  });
+}, { threshold: 0.3 });
+
+document.querySelectorAll('[data-count]').forEach(el => countObserver.observe(el));
+
+// ===== CONTINUOUS RUNNING TESTIMONIAL MARQUEE =====
+function initTestimonialMarquee() {
+  const track = document.getElementById('testimonials-track');
+  if (!track) return;
+
+  // Clone children to make a seamless continuous loop
+  if (!track.getAttribute('data-cloned')) {
+    const cards = Array.from(track.children);
+    cards.forEach(card => {
+      const clone = card.cloneNode(true);
+      clone.setAttribute('aria-hidden', 'true');
+      track.appendChild(clone);
+    });
+    track.setAttribute('data-cloned', 'true');
+  }
+}
+
+document.addEventListener('DOMContentLoaded', initTestimonialMarquee);
+if (document.readyState === 'interactive' || document.readyState === 'complete') {
+  initTestimonialMarquee();
+}
+
+

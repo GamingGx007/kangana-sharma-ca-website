@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>CA Kangana Sharma — Virtual CFO & GST Services</title>
   <meta name="description" content="CA Kangana Sharma offers expert Virtual CFO, GST, ITR Filing and Cross-Border Accounting services to help growing businesses achieve strategic financial leadership." />
+  <link rel="icon" type="image/png" href="images/ca-logo.png" />
   <link rel="stylesheet" href="css/style.css" />
   <style>
     /* Homepage-specific overrides */
@@ -26,7 +27,7 @@
       padding: 80px 24px;
     }
     .testimonials-inner {
-      max-width: 1100px;
+      max-width: 1540px;
       margin: 0 auto;
     }
     .testimonials-inner .section-tag {
@@ -111,10 +112,8 @@
     <nav class="navbar" role="navigation" aria-label="Main navigation">
       <!-- Brand -->
       <a href="index.html" class="navbar-brand">
-        <div class="navbar-logo" aria-hidden="true">
-          <svg viewBox="0 0 36 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <text x="0" y="18" font-family="Inter, sans-serif" font-size="14" font-weight="800" fill="white" letter-spacing="-0.5">CA</text>
-          </svg>
+        <div class="navbar-logo">
+          <img src="images/ca-logo.png" alt="CA India Logo" />
         </div>
         <span class="navbar-wordmark">Kangana Sharma</span>
       </a>
@@ -165,21 +164,6 @@
           <p class="hero-sub fade-up fade-up-d2">
             Virtual CFO, GST and Tax services to help you expand your business.
           </p>
-
-          <a
-            href="https://wa.me/919284705515?text=Hi%20CA%20Kangana%20Sharma%2C%20I%20would%20like%20to%20know%20more%20about%20your%20services."
-            class="btn-whatsapp fade-up fade-up-d3"
-            target="_blank"
-            rel="noopener noreferrer"
-            id="hero-whatsapp-btn"
-            aria-label="Chat on WhatsApp"
-          >
-            <!-- WhatsApp icon -->
-            <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/>
-            </svg>
-            WhatsApp
-          </a>
         </div>
 
         <!-- Right — staggered service cards -->
@@ -194,7 +178,10 @@
                   <circle cx="12" cy="7" r="4"/>
                 </svg>
               </div>
-              <span class="scard-title">Virtual CFO</span>
+              <div class="scard-text">
+                <span class="scard-title">Virtual CFO</span>
+                <span class="scard-sub">Strategic Financial Leadership</span>
+              </div>
             </div>
 
             <!-- Cross-Border Accounting -->
@@ -206,15 +193,21 @@
                   <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
                 </svg>
               </div>
-              <span class="scard-title">Cross-Border<br>Accounting</span>
+              <div class="scard-text">
+                <span class="scard-title">Cross-Border Accounting</span>
+                <span class="scard-sub">Multi-Currency & Global Compliance</span>
+              </div>
             </div>
 
             <!-- GST -->
             <div class="scard scard-3" aria-label="GST service">
               <div class="scard-icon icon-gst" style="flex-direction:column;gap:0;">
-                <span class="gst-badge">GST</span>
+                <span class="gst-badge" style="font-size:11px;padding:4px 7px;">GST</span>
               </div>
-              <span class="scard-title">GST</span>
+              <div class="scard-text">
+                <span class="scard-title">GST Services</span>
+                <span class="scard-sub">Registration, Returns & Refunds</span>
+              </div>
             </div>
 
             <!-- ITR Filing -->
@@ -228,7 +221,10 @@
                   <polyline points="10 9 9 9 8 9"/>
                 </svg>
               </div>
-              <span class="scard-title">ITR Filing</span>
+              <div class="scard-text">
+                <span class="scard-title">ITR Filing & Tax Planning</span>
+                <span class="scard-sub">Individual & Corporate Compliance</span>
+              </div>
             </div>
 
           </div>
@@ -293,17 +289,17 @@
       <h2 class="section-h2 fade-up fade-up-d1">Built for Growing Businesses</h2>
       <div class="why-grid">
         <div class="why-card fade-up fade-up-d1">
-          <div class="why-num">[X]+</div>
+          <div class="why-num" data-count="8" data-suffix="+">0+</div>
           <h3>Years of Experience</h3>
-          <p>Deep expertise across industries — from startups to established enterprises.</p>
+          <p>Deep expertise across industries — from tech startups to established enterprises.</p>
         </div>
         <div class="why-card fade-up fade-up-d2">
-          <div class="why-num">[X]+</div>
-          <h3>Clients Served</h3>
-          <p>Trusted by businesses across India and internationally.</p>
+          <div class="why-num">100%</div>
+          <h3>Personalised Attention</h3>
+          <p>Direct, dedicated guidance and responsive support tailored specifically to your business goals.</p>
         </div>
         <div class="why-card fade-up fade-up-d3">
-          <div class="why-num">100%</div>
+          <div class="why-num" data-count="100" data-suffix="%">0%</div>
           <h3>Compliance Record</h3>
           <p>Zero penalties for clients with consistent, on-time filing and reporting.</p>
         </div>
@@ -315,47 +311,84 @@
       <div class="testimonials-inner">
         <div class="section-tag fade-up">Testimonials</div>
         <h2 class="section-h2 fade-up fade-up-d1">What Clients Say</h2>
-        <p class="section-sub fade-up fade-up-d2" style="margin-bottom:40px;">[Testimonial section — client quotes will be added here.]</p>
-        <div class="testimonials-grid">
-          <div class="tcard fade-up fade-up-d1">
-            <div class="tcard-stars">★★★★★</div>
-            <p>"[Testimonial placeholder — a genuine client quote will appear here once provided.]"</p>
-            <div class="tcard-author">
-              <div class="tcard-avatar">A</div>
-              <div>
-                <div class="tcard-name">[Client Name]</div>
-                <div class="tcard-role">[Designation, Company]</div>
+        <p class="section-sub fade-up fade-up-d2" style="margin-bottom:30px;">Hear how strategic financial leadership & seamless GST compliance empower scaling businesses.</p>
+        
+        <!-- Running Slider Container -->
+        <div class="testimonials-slider-wrapper">
+          <div class="testimonials-track" id="testimonials-track">
+            
+            <!-- Testimonial 1 -->
+            <div class="tcard">
+              <div class="tcard-content">
+                <div class="tcard-stars">★★★★★</div>
+                <p>"I truly appreciate her prompt support, attention to detail, and commitment to her clients. I would highly recommend her professional services to anyone looking for a reliable and knowledgeable Chartered Accountant."</p>
+              </div>
+              <div class="tcard-author">
+                <div class="tcard-avatar">PK</div>
+                <div>
+                  <div class="tcard-name">Pravin Khandagale</div>
+                  <div class="tcard-role">Client</div>
+                  <span class="tcard-tag">CA Advisory</span>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="tcard fade-up fade-up-d2">
-            <div class="tcard-stars">★★★★★</div>
-            <p>"[Testimonial placeholder — a genuine client quote will appear here once provided.]"</p>
-            <div class="tcard-author">
-              <div class="tcard-avatar">B</div>
-              <div>
-                <div class="tcard-name">[Client Name]</div>
-                <div class="tcard-role">[Designation, Company]</div>
+
+            <!-- Testimonial 2 -->
+            <div class="tcard">
+              <div class="tcard-content">
+                <div class="tcard-stars">★★★★★</div>
+                <p>"I was in search of a CA who will file my IT return with perfect calculation of taxes. Miss Kangana Sharma is perfect choice for this. Working with CA Kangana has streamlined my tax compliance and saved me countless hours of stress. Highly professional, knowledgeable, and always prompt to respond at any point of time. She is a very good financial advisor for everyone."</p>
+              </div>
+              <div class="tcard-author">
+                <div class="tcard-avatar">JM</div>
+                <div>
+                  <div class="tcard-name">Jeetendra M</div>
+                  <div class="tcard-role">Client</div>
+                  <span class="tcard-tag">ITR & Tax Compliance</span>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="tcard fade-up fade-up-d3">
-            <div class="tcard-stars">★★★★★</div>
-            <p>"[Testimonial placeholder — a genuine client quote will appear here once provided.]"</p>
-            <div class="tcard-author">
-              <div class="tcard-avatar">C</div>
-              <div>
-                <div class="tcard-name">[Client Name]</div>
-                <div class="tcard-role">[Designation, Company]</div>
+
+            <!-- Testimonial 3 -->
+            <div class="tcard">
+              <div class="tcard-content">
+                <div class="tcard-stars">★★★★★</div>
+                <p>"I have been availing the professional services for my income tax calculation and return filing for the past three years, and I am very happy with the overall experience. The process has always been smooth, professional, and hassle-free. They are knowledgeable, responsive, and take the time to explain things clearly. I appreciate their attention to detail and timely assistance throughout the tax filing process. I would definitely recommend their services to anyone looking for reliable and professional income tax and return filing assistance."</p>
+              </div>
+              <div class="tcard-author">
+                <div class="tcard-avatar">CI</div>
+                <div>
+                  <div class="tcard-name">Chaitanya I</div>
+                  <div class="tcard-role">Client</div>
+                  <span class="tcard-tag">Income Tax & Filing</span>
+                </div>
               </div>
             </div>
-          </div>
-        </div>
+
+            <!-- Testimonial 4 -->
+            <div class="tcard">
+              <div class="tcard-content">
+                <div class="tcard-stars">★★★★★</div>
+                <p>"I have had the pleasure of working with CA Kangana Sharma on few audit assignments for large companies. She is meticulous, highly professional, hardworking and responsible, and approaches every assignment with exceptional care and diligence. Her commitment to quality and her dependable approach make her a valued professional to work with. I am pleased to recommend her as a Chartered Accountant."</p>
+              </div>
+              <div class="tcard-author">
+                <div class="tcard-avatar">RA</div>
+                <div>
+                  <div class="tcard-name">CA Ritesh Agarwal</div>
+                  <div class="tcard-role">Chartered Accountant</div>
+                  <span class="tcard-tag">Audit Assignments</span>
+                </div>
+              </div>
+            </div>
+
+          </div><!-- /testimonials-track -->
+        </div><!-- /testimonials-slider-wrapper -->
+
       </div>
     </section>
 
     <!-- CTA BAND -->
-    <div class="cta-band fade-up" style="max-width:1052px; margin-left:auto; margin-right:auto; margin-top:80px;">
+    <div class="cta-band fade-up" style="max-width:1480px; margin-left:auto; margin-right:auto; margin-top:80px;">
       <div>
         <h2>Ready to get your finances under control?</h2>
         <p>Book a free 30-minute consultation — no commitment, no jargon.</p>
@@ -380,7 +413,7 @@
       <div class="footer-inner">
         <div class="footer-brand">
           <div class="footer-logo-mark">
-            <div class="navbar-logo"><svg viewBox="0 0 36 24" fill="none"><text x="0" y="18" font-family="Inter,sans-serif" font-size="14" font-weight="800" fill="white" letter-spacing="-0.5">CA</text></svg></div>
+            <div class="navbar-logo"><img src="images/ca-logo.png" alt="CA India Logo" style="height:32px;background:white;padding:2px 6px;border-radius:6px;" /></div>
             <span style="color:white;font-weight:700;font-size:15px;">Kangana Sharma</span>
           </div>
           <p>Helping growing businesses achieve strategic financial clarity through expert Virtual CFO, GST, and tax services.</p>
@@ -406,7 +439,6 @@
           <h4>Connect</h4>
           <ul>
             <li><a href="https://wa.me/919284705515" target="_blank" rel="noopener">WhatsApp</a></li>
-            <li><a href="#">LinkedIn [placeholder]</a></li>
           </ul>
         </div>
       </div>
