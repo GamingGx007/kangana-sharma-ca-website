@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>404 — Page Not Found | CA Kangana Sharma</title>
+  <meta name="description" content="The page you are looking for does not exist. Return to CA Kangana Sharma's homepage." />
+  <link rel="icon" type="image/png" href="images/ca-logo.png" />
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    .error-container {
+      min-height: calc(100vh - 280px);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 100px 24px 80px;
+      max-width: 680px;
+      margin: 0 auto;
+    }
+    .error-code {
+      font-size: clamp(72px, 12vw, 120px);
+      font-weight: 900;
+      color: var(--gold);
+      line-height: 1;
+      letter-spacing: -3px;
+      margin-bottom: 8px;
+    }
+    .error-title {
+      font-size: clamp(24px, 4vw, 36px);
+      font-weight: 800;
+      color: var(--navy);
+      margin-bottom: 16px;
+    }
+    .error-desc {
+      font-size: 16px;
+      color: var(--text-body);
+      line-height: 1.65;
+      margin-bottom: 32px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <div class="navbar-wrapper">
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+      <a href="index.html" class="navbar-brand">
+        <div class="navbar-logo">
+          <img src="images/ca-logo.png" alt="CA India Logo" />
+        </div>
+        <span class="navbar-wordmark">Kangana Sharma</span>
+      </a>
+      <ul class="navbar-links" id="navbar-links" role="menubar">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="navbar-actions">
+        <a href="contact.html" class="btn-book" id="btn-book-nav">Book Now</a>
+        <button class="nav-hamburger" id="nav-hamburger" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </div>
+
+  <div class="page-wrapper">
+    <div class="error-container">
+      <div class="section-tag fade-up">404 Error</div>
+      <h1 class="error-code fade-up fade-up-d1">404</h1>
+      <h2 class="error-title fade-up fade-up-d2">Page Not Found</h2>
+      <p class="error-desc fade-up fade-up-d3">
+        The page you are looking for might have been moved, renamed, or doesn't exist. Let's get you back on track.
+      </p>
+      <a href="index.html" class="btn-book fade-up fade-up-d4" style="padding:14px 28px;font-size:15px;">
+        Return to Homepage
+      </a>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <div class="footer-logo-mark">
+            <div class="navbar-logo"><img src="images/ca-logo.png" alt="CA India Logo" style="height:32px;background:white;padding:2px 6px;border-radius:6px;" /></div>
+            <span style="color:white;font-weight:700;font-size:15px;">Kangana Sharma</span>
+          </div>
+          <p>Helping growing businesses achieve strategic financial clarity through expert Virtual CFO, GST, and tax services.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="services.html#virtual-cfo">Virtual CFO</a></li>
+            <li><a href="services.html#cross-border">Cross-Border Accounting</a></li>
+            <li><a href="services.html#gst">GST Services</a></li>
+            <li><a href="services.html#itr">ITR Filing</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Connect</h4>
+          <ul>
+            <li><a href="https://wa.me/919284705515" target="_blank" rel="noopener">WhatsApp</a></li>
+            <li><a href="mailto:kanganasharma.co@gmail.com">Email</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 CA Kangana Sharma. All rights reserved.</span>
+        <span>ICAI Member [Member No. Placeholder]</span>
+      </div>
+    </footer>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
