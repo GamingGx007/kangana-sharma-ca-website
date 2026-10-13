@@ -37,6 +37,16 @@
       color: var(--white);
       border-color: var(--navy);
     }
+    .blog-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 28px;
+    }
+    @media (max-width: 768px) {
+      .blog-grid {
+        grid-template-columns: 1fr;
+      }
+    }
     .blog-card {
       cursor: pointer;
       display: flex;
