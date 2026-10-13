@@ -227,10 +227,10 @@ img {
 
 /* ===== HERO SECTION ===== */
 .hero {
-  min-height: calc(100vh - 88px);
+  min-height: auto;
   display: flex;
   align-items: center;
-  padding: 60px 24px 80px;
+  padding: 40px 24px 50px;
   max-width: 1540px;
   margin: 0 auto;
 }
